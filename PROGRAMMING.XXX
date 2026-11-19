@@ -1,0 +1,104 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+string first_name;
+string last_name;
+string section;
+double age;
+string gender;
+double cc101;
+double gec1;
+double cc102;
+double elective1;
+double gec2;
+double gec5;
+double pathfit;
+double nstp1;
+double average;
+
+cout << "STUDENT GRADE SYSTEM" << endl;
+
+cout << "Student First Name: ";
+cin >> first_name;
+
+cout << " Student Last Name: ";
+cin>> last_name;
+
+cout<< "Enter your Section: ";
+cin>> section;
+
+cout<< "Enter your Age    : ";
+cin>> age;
+
+cout<< "Enter your Gender : ";
+cin>> gender;
+
+cout << "\nEnter Grades:" << endl;
+
+cout << "CC101       : ";
+cin >> cc101;
+
+cout << "GEC 1       : ";
+cin >> gec1;
+
+cout << "CC102       : ";
+cin >> cc102;
+
+cout << "ELECTIVE 1  : ";
+cin >> elective1;
+
+cout<< "GEC 2       : ";
+cin>> gec2;
+
+cout<< "GEC 5       : ";
+cin>> gec5;
+
+cout<< "PATHFIT     : ";
+cin>> pathfit;
+
+cout<< "NSTP 1      : ";
+cin>> nstp1;
+
+average = cc102+gec1+cc102+elective1+gec2+gec5+pathfit+nstp1;
+
+average=average/8;
+
+cout << "\n***** STUDENT RESULT *****" << endl;
+ 
+cout << "Student full name: " << first_name<< " "<< last_name<< endl;
+cout<< "Student section  : " << section << endl;
+cout<< "Student Age      : "<<age<<endl;
+cout<<"Student Gender   : "<<gender<<endl;
+cout << "Average Grade    : " << average << endl;
+ 
+ 
+if (average >= 75 && average <= 89)
+    { 
+        cout << "                                "<< endl;
+        cout << "YOU ARE PASSED" << endl;
+    }
+
+else if (average >= 90 && average <= 94)
+    {
+        cout<< "        "<< endl;
+        cout << "WITH HONOR" << endl;
+    }
+
+else if ( average>= 95 && average <= 97)
+    {
+        cout<< "       "<< endl;
+        cout << "WITH HIGH HONOR" << endl;
+    }
+    
+    else if ( average>= 98 && average <= 99 )
+    
+   { 
+   cout <<"                  " << endl;
+   cout<< " WITH HIGHEST HONOR "<< endl;
+   }
+
+    return 0;
+}
